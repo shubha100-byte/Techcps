@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techcps</title>
+    <meta
+      name="description"
+      content="Techcps - Learn Coding, AI, Web Development and Modern Technology"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Techcps.css" />
+  </head>
+
+  <body>
+    <div class="custom-cursor"></div>
+
+    <!-- PRELOADER -->
+
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <button id="scrollTopBtn">↑</button>
+
+    <!-- SOCIAL TOGGLE -->
+
+    <div class="social-container">
+      <!-- MAIN BUTTON -->
+      <button class="social-toggle" id="socialToggle">+</button>
+
+      <!-- SOCIAL ICONS -->
+      <div class="social-icons-box" id="socialIcons">
+        <a href="https://youtube.com/@TechcpsOfficial" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor" id="cursor"></div>
+    <div id="loader">
+      <div class="loader-content">
+        <div class="loader-circle"></div>
+
+        <h2>Loading Techcps...</h2>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="nav" data-aos="fade-down">
+      <!-- LOGO -->
+      <div class="logo">
+        <a href="#">
+          <img
+            src="logo.png"
+            alt="Techcps Logo"
+            style="height: 80px; vertical-align: middle"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'inline';
+            "
+          />
+
+          <span style="margin-left: 8px; display: none"> 🖥️ Techcps </span>
+        </a>
+      </div>
+
+      <!-- SEARCH -->
+      <form id="searchForm">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="🔍 Search videos..."
+          class="search-box"
+        />
+      </form>
+
+      <!-- MOBILE MENU BUTTON -->
+      <div class="menu-toggle" id="menuToggle">☰</div>
+
+      <!-- NAV LINKS -->
+      <div class="nav-links" id="navLinks">
+        <a href="#">Home</a>
+
+        <a href="#videos">Videos</a>
+
+        <a href="#about">About</a>
+
+        <span class="auth-btn" id="loginBtn"> Log In </span>
+
+        <span class="auth-btn" id="signupBtn"> Sign Up </span>
+
+        <span class="auth-btn" id="themeToggle"> 🌙 </span>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" data-aos="fade-up">
+      <div class="hero-content">
+        <h1>Learn Coding, AI & Modern Technology</h1>
+
+        <p>
+          Master Web Development, Artificial Intelligence, Cloud Computing,
+          Programming and Creator Skills with Techcps.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="hero-btn primary-btn">Explore Videos</button>
+
+          <button class="hero-btn secondary-btn">Join Community</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>I Create <span class="typing" id="typing"></span></h1>
+
+        <p>
+          Build & Learn amazing projects with Web Development, Artificial
+          Intelligence and Modern Technology tutorials from Techcps.
+        </p>
+
+        <a
+          href="https://youtube.com/@TechcpsOfficial"
+          target="_blank"
+          class="hero-btn secondary-btn"
+        >
+          Subscribe
+        </a>
+      </div>
+    </section>
+
+    <section class="section" data-aos="fade-up">
+      <h1>Welcome to Techcps</h1>
+      <p>
+        Your go-to YouTube channel for the latest in technology, tutorials,
+        reviews, and tips. Join our community and stay ahead in the tech world!
+      </p>
+      <div class="social-icons">
+        <a
+          href="https://youtube.com/@TechcpsOfficial"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="YouTube"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Twitter"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          href="https://linkedin.com/in/yourprofile"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Facebook"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="mailto:contact@techcps.com" title="Email"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+    </section>
+    <!-- STATS SECTION -->
+    <section class="stats-section">
+      <div class="section-title">
+        <h2>📊 Techcps Statistics</h2>
+        <p>Our growing community and achievements</p>
+      </div>
+
+      <div class="stats-container">
+        <div class="stat-box" data-aos="zoom-in">
+          <h2><span class="counter" data-target="100">0</span>+</h2>
+          <p>Videos Uploaded</p>
+        </div>
+
+        <div class="stat-box" data-aos="zoom-in">
+          <h2><span class="counter" data-target="5000">0</span>+</h2>
+          <p>Subscribers</p>
+        </div>
+
+        <div class="stat-box" data-aos="zoom-in">
+          <h2><span class="counter" data-target="120">0</span>+</h2>
+          <p>Projects Created</p>
+        </div>
+
+        <div class="stat-box" data-aos="zoom-in">
+          <h2><span class="counter" data-target="10000">0</span>+</h2>
+          <p>Community Members</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <div class="grid">
+        <div class="card" data-aos="zoom-in">💻 Web Development</div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+          📱 App Development
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+          ⚡ Tech Tips & Tricks
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="stats-heading">
+        <h2 class="section-title" data-aos="fade-up">🚀 Website Statistics</h2>
+
+        <p class="section-subtitle" data-aos="fade-up">
+          Discover key milestones and the impressive progress Techcps has made
+          in web development, AI education, and technology tutorials. Our
+          commitment to quality learning drives continuous growth and community
+          engagement.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card stats-card">
+          <h2 class="counter" data-target="150">0</h2>
+          <p>Projects Completed</p>
+        </div>
+
+        <div class="card stats-card">
+          <h2 class="counter" data-target="1200">0</h2>
+          <p>YouTube Subscribers</p>
+        </div>
+
+        <div class="card stats-card">
+          <h2 class="counter" data-target="85">0</h2>
+          <p>Tutorial Videos</p>
+        </div>
+
+        <div class="card stats-card">
+          <h2 class="counter" data-target="5000">0</h2>
+          <p>Website Visitors</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED VIDEO -->
+    <section class="section" data-aos="fade-up">
+      <h2>Featured Video</h2>
+      <iframe src="https://www.youtube.com/embed/fs0JTcavh5g"></iframe>
+    </section>
+
+    <!-- VIDEOS -->
+    <section id="videos" class="section">
+      <h2 data-aos="fade-up">Latest Videos</h2>
+
+      <div class="grid" id="videoContainer">
+        <p id="noResult" style="text-align: center; display: none">
+          No videos found 😢
+        </p>
+
+        <!-- VIDEO 1 -->
+        <iframe
+          data-aos="fade-up"
+          src="https://www.youtube.com/embed/fs0JTcavh5g"
+          allowfullscreen
+        ></iframe>
+
+        <!-- VIDEO 2 -->
+        <iframe
+          data-aos="fade-up"
+          data-aos-delay="100"
+          src="https://www.youtube.com/embed/fs0JTcavh5g"
+          allowfullscreen
+        ></iframe>
+
+        <!-- VIDEO 3 -->
+        <iframe
+          data-aos="fade-up"
+          data-aos-delay="200"
+          src="https://www.youtube.com/embed/fs0JTcavh5g"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about" class="section about-section">
+      <div class="about-container">
+        <div class="about-image" data-aos="fade-right">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+            alt="About Techcps"
+          />
+        </div>
+
+        <div class="about-content" data-aos="fade-left">
+          <h2>About Techcps</h2>
+
+          <p>
+            Techcps is a modern technology platform focused on Web Development,
+            Artificial Intelligence, Programming, Cloud Computing and Creator
+            Skills.
+          </p>
+
+          <p>
+            Our mission is to help students and developers learn modern
+            technology in an easy, practical and professional way.
+          </p>
+
+          <a href="#" class="btn"> Learn More </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+
+    <section class="section faq-section">
+      <h2 data-aos="fade-up">Frequently Asked Questions(FAQ)</h2>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <div class="faq-question">What does Techcps teach?</div>
+
+          <div class="faq-answer">
+            Techcps teaches Web Development, AI, Programming, Cloud Computing
+            and Modern Technology.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-question">Are the tutorials beginner friendly?</div>
+
+          <div class="faq-answer">
+            Yes, all tutorials are designed for beginners as well as
+            intermediate developers.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-question">Is Techcps free to learn?</div>
+
+          <div class="faq-answer">
+            Yes, most Techcps tutorials and resources are completely free.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-question">Do you teach JavaScript and React?</div>
+
+          <div class="faq-answer">
+            Yes, Techcps provides tutorials on JavaScript, React, APIs and
+            frontend development.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <div class="faq-question">Can I learn AI and Python here?</div>
+
+          <div class="faq-answer">
+            Absolutely! Techcps covers AI tools, Python programming and
+            automation projects.
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <div class="faq-question">How often do new videos upload?</div>
+
+          <div class="faq-answer">
+            New tutorials and tech videos are uploaded regularly on the Techcps
+            YouTube channel.
+          </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="faq-item">
+          <div class="faq-question">Can I request tutorial topics?</div>
+
+          <div class="faq-answer">
+            Yes, you can suggest tutorial ideas through comments or community
+            posts.
+          </div>
+        </div>
+
+        <!-- FAQ 8 -->
+        <div class="faq-item">
+          <div class="faq-question">Does Techcps provide source code?</div>
+
+          <div class="faq-answer">
+            Yes, source code and project files are provided for many tutorials.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+
+    <section class="section testimonials-section">
+      <h2 data-aos="fade-up">What Our Community Says📢</h2>
+
+      <div class="testimonial-slider">
+        <div class="testimonial active">
+          <p>
+            "Techcps helped me learn modern web development in a very easy way."
+          </p>
+
+          <h4>- Rahul Sharma</h4>
+        </div>
+
+        <div class="testimonial">
+          <p>
+            "The AI and JavaScript tutorials are amazing and beginner friendly."
+          </p>
+
+          <h4>- Priya Das</h4>
+        </div>
+
+        <div class="testimonial">
+          <p>
+            "One of the best tech learning channels for students and
+            developers."
+          </p>
+
+          <h4>- Aman Verma</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact" class="contact-section">
+      <div class="contact-header">
+        <h2 class="section-title">Contact Techcps</h2>
+
+        <p class="section-subtitle">
+          Let's build something amazing together. Feel free to contact for
+          collaborations, projects or learning support.
+        </p>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- LEFT SIDE -->
+
+        <div class="contact-info">
+          <div class="contact-card">
+            <h3>📧 Email</h3>
+            <p>techcpsofficial@gmail.com</p>
+          </div>
+
+          <div class="contact-card">
+            <h3>📍 Location</h3>
+            <p>Kolkata, India</p>
+          </div>
+
+          <div class="contact-card">
+            <h3>🚀 YouTube</h3>
+            <p>@TechcpsOfficial</p>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <form class="contact-form" id="contactForm">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <button type="submit">Send Message 🚀</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+        <h2>Join The Techcps Community 🚀</h2>
+
+        <p>
+          Get the latest tutorials, coding tips, AI updates and creator
+          resources directly to your inbox.
+        </p>
+
+        <form id="newsletterForm">
+          <input type="email" placeholder="Enter your email" required />
+
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Info -->
+        <div class="footer-box">
+          <h3>Info</h3>
+          <a href="#">Techcps</a>
+        </div>
+
+        <!-- Explore -->
+        <div class="footer-box">
+          <h3>Explore</h3>
+          <a href="#">Latest Tech Trends</a>
+          <a href="#">AI & Coding Tools</a>
+          <a href="#">Developer Resources</a>
+          <a href="#">Cloud Computing</a>
+          <a href="#">Tech Productivity Hacks</a>
+          <a href="#">Creator Academy</a>
+          <a href="#">App & Software Reviews</a>
+          <a href="#">UI/UX Inspirations</a>
+          <a href="#">AI CONTENT & TOOLS</a>
+          <a href="#">Web Development Resources</a>
+          <a href="#">ROADMAPS</a>
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-box">
+          <h3>Legal</h3>
+          <a href="#">Customer Agreement</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">GDPR</a>
+          <a href="#">Security</a>
+          <a href="#">Testimonials</a>
+          <a href="#">Media Kit</a>
+        </div>
+
+        <!-- TechcpsOfficial -->
+        <div class="footer-box newsletter">
+          <h3>TechcpsOfficial</h3>
+
+          <p>
+            Subscribe to our TechcpsOfficial in YouTube for weekly videos,
+            updates, helpful tech tips and exclusive content.
+          </p>
+
+          <div class="newsletter-box">
+            <input type="email" placeholder="Your email" />
+            <button>SUBSCRIBE</button>
+          </div>
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- FOOTER -->
+    <footer class="footer-bottom">
+      © 2026 Techcps. All rights reserved | Developed by Shubhadeep Saha💖
+    </footer>
+
+    <!-- LOGIN/SIGNUP MODAL -->
+    <div class="modal" id="authModal">
+      <div class="modal-content" id="modalContent">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2 id="modalTitle">Log In</h2>
+        <input type="email" placeholder="Email" id="email" />
+        <input type="password" placeholder="Password" id="password" />
+        <button id="authSubmit">Submit</button>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="Techcps.js"></script>
+  </body>
+  <div class="cursor-glow"></div>
+</html>
